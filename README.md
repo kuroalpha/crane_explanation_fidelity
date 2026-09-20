@@ -18,7 +18,7 @@ Clone the pinned primary components, then initialize astro_dock's nested depende
 separately pinned explanation packages:
 
 ```bash
-git clone --recurse-submodules https://github.com/1unarzDev/crane_explanation_fidelity.git
+git clone --recurse-submodules https://github.com/kuroalpha/crane_explanation_fidelity.git
 cd crane_explanation_fidelity
 scripts/setup_workspace.sh
 ```

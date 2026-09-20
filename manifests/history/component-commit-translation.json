@@ -1,0 +1,50 @@
+{
+  "schema": "crane-explain-component-commit-translation/v1",
+  "created_local_date": "2026-09-20",
+  "reason": "The component repositories were re-authored to a single identity. A commit hash covers its author field, so every component commit hash changed. The code did not: each rewritten pinned commit carries a byte-identical tree.",
+  "what_this_preserves": "Provenance in this study means the exact source and configuration that governed observed behaviour. That is the tree, not the commit label. Every pinned tree hash below is unchanged, so the code a model was given is still retrievable and still verifiable.",
+  "pinned_components": [
+    {
+      "name": "astro_dock",
+      "path": "packages/astro_dock",
+      "previous_commit": "36202373ae186a8fd247a20b7b477312a744de99",
+      "current_commit": "a26899f3c6937d3ad7e512902fe237b0eddfcc11",
+      "tree_sha": "183132a9",
+      "tree_unchanged": true
+    },
+    {
+      "name": "crane_ml",
+      "path": "packages/crane_ml",
+      "previous_commit": "c559932a5ebef00bfa7752511799fd904e5c9dbe",
+      "current_commit": "cea3606990c1b240255b9dca1bc5bed437480110",
+      "tree_sha": "24ce4d20315628ed1c947c479594e78780cccbd5",
+      "tree_unchanged": true
+    },
+    {
+      "name": "crane_explain_core",
+      "path": "packages/astro_dock/src/crane_explain",
+      "previous_commit": "a8099bca720bb06adde3fe1324982e1c046c2313",
+      "current_commit": "398ccb7c57baa5118be2e7a99433061d91e3170f",
+      "tree_sha": "abaf5e6b",
+      "tree_unchanged": true
+    },
+    {
+      "name": "crane_explain_ros",
+      "path": "packages/astro_dock/src/crane_explain_ros",
+      "previous_commit": "6f622ba7e375c2fe028237e75d2ea75651372935",
+      "current_commit": "b370f9b9117f0a2984e8494e0a88dd262d6a2464",
+      "tree_sha": "1a9e9ac6",
+      "tree_unchanged": true
+    }
+  ],
+  "effect_on_sealed_evidence": {
+    "statement": "All 18 retained Claude-arm envelopes record repository_commit = c559932a5ebef00bfa7752511799fd904e5c9dbe. That hash no longer resolves in the component repository. It translates to cea3606990c1b240255b9dca1bc5bed437480110, whose tree 24ce4d20315628ed1c947c479594e78780cccbd5 is byte-identical.",
+    "envelopes_edited": false,
+    "why_not": "The envelopes are sealed evidence and their bytes are covered by the verified hashes in manifests/model_outputs/provenance-claude-replication-arm-v1.json. Editing them to show a nicer hash would falsify a retained record and break that hash chain. The record states what was true when the calls were made; this file supplies the translation.",
+    "manifest_hashes_still_verify": true
+  },
+  "how_to_verify": [
+    "git -C packages/crane_ml rev-parse cea3606990c1b240255b9dca1bc5bed437480110^{tree}",
+    "confirm it equals 24ce4d20315628ed1c947c479594e78780cccbd5, the tree the sealed calls were given"
+  ]
+}

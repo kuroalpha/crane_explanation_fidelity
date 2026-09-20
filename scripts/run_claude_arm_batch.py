@@ -25,7 +25,7 @@ from typing import Any
 WORKSPACE = Path(__file__).resolve().parent.parent
 RUNNER = WORKSPACE / "analysis/run_provenance_claude_arm.py"
 REPOSITORY = WORKSPACE / "packages/crane_ml"
-REPOSITORY_URL = "https://github.com/1unarzDev/crane_ml.git"
+REPOSITORY_URL = "https://github.com/kuroalpha/crane_ml.git"
 QUESTION_KINDS = ("recovery-mechanism", "failure-cause")
 
 DEVELOPMENT_EPISODES = ("e019", "e021", "e037", "e038")
@@ -163,7 +163,7 @@ def main() -> int:
     )
     parser.add_argument(
         "--commit",
-        default="c559932a5ebef00bfa7752511799fd904e5c9dbe",
+        default="cea3606990c1b240255b9dca1bc5bed437480110",
         help="pinned crane_ml commit; must match manifests/workspace.lock.json",
     )
     args = parser.parse_args()

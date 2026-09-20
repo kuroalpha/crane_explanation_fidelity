@@ -4,29 +4,29 @@
     {
       "name": "astro_dock",
       "path": "packages/astro_dock",
-      "url": "https://github.com/1unarzdev/astro_dock.git",
-      "commit": "36202373ae186a8fd247a20b7b477312a744de99"
+      "url": "https://github.com/kuroalpha/astro_dock.git",
+      "commit": "a26899f3c6937d3ad7e512902fe237b0eddfcc11"
     },
     {
       "name": "crane_ml",
       "path": "packages/crane_ml",
-      "url": "https://github.com/1unarzDev/crane_ml.git",
-      "commit": "c559932a5ebef00bfa7752511799fd904e5c9dbe"
+      "url": "https://github.com/kuroalpha/crane_ml.git",
+      "commit": "cea3606990c1b240255b9dca1bc5bed437480110"
     }
   ],
   "nested_repositories": [
     {
       "name": "crane_explain_core",
       "path": "packages/astro_dock/src/crane_explain",
-      "url": "https://github.com/1unarzDev/crane_explain.git",
-      "commit": "a8099bca720bb06adde3fe1324982e1c046c2313",
+      "url": "https://github.com/kuroalpha/crane_explain.git",
+      "commit": "398ccb7c57baa5118be2e7a99433061d91e3170f",
       "initialize_submodules": false
     },
     {
       "name": "crane_explain_ros",
       "path": "packages/astro_dock/src/crane_explain_ros",
-      "url": "https://github.com/1unarzDev/crane_explain_ros.git",
-      "commit": "6f622ba7e375c2fe028237e75d2ea75651372935",
+      "url": "https://github.com/kuroalpha/crane_explain_ros.git",
+      "commit": "b370f9b9117f0a2984e8494e0a88dd262d6a2464",
       "initialize_submodules": false
     }
   ]

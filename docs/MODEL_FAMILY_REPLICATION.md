@@ -169,6 +169,12 @@ the cache root's `_retained_failed_calls/`, and is excluded from the 54-call sha
 summary; its $0.0472168 cost is real and reported separately. Amendment 3 records the adapter
 correction that keeps such a failure out of the content-addressed answer cache.
 
+The component repositories were later re-authored to a single identity, which changed every
+component commit hash without changing any tree. The envelopes still record the pinned commit that
+was in effect when their calls were made; `manifests/history/component-commit-translation.json`
+maps it to the current hash and shows the tree is byte-identical. The envelopes are not edited, and
+the arm manifest's hashes still verify.
+
 No Claude sealed answer has been scored, and no cross-family effect estimate exists.
 
 ## Commands
